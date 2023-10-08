@@ -1,6 +1,6 @@
 require('dotenv').config()
 const scryfallApi = 'https://api.scryfall.com/cards/'
-const localApi = process.env.API_URI || 'http://localhost:1000'
+const localApi = process.env.REACT_APP_API_URI || 'http://localhost:1000'
 const autocomplete = `${scryfallApi}autocomplete?q=`
 
 export const getAutocomplete = (str) => {
